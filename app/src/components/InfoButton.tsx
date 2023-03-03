@@ -10,7 +10,7 @@ function InfoButton(props:infoProps) {
 
   return (
     <OverlayTrigger
-      placement="bottom"
+      placement="right"
       delay={{ show: 250, hide: 400 }}
       overlay={<Tooltip id="button-tooltip" {...props}>
       {props.detail}

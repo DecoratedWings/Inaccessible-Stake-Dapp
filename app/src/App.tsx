@@ -5,6 +5,8 @@ import PhishingBanner from "./components/PhishingBanner";
 import PolicyModal from "./components/Modal";
 import CardsGroup from "./components/CardsGroup";
 import Container from "react-bootstrap/esm/Container";
+import policy from './components/FakePolicy';
+
 function App() {
   const [show, setShow] = useState(true);
 
@@ -20,7 +22,7 @@ function App() {
             Not So Great UX Staking Dapp
           </h1>
         </Container>
-        <PolicyModal setShow={setShow} show={show} />
+        <PolicyModal setShow={setShow} show={show} content={policy}/>
         <CardsGroup />
       </div>
     </>
