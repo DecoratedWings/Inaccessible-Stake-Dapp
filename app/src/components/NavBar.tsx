@@ -10,7 +10,6 @@ function CollapsibleExample() {
   const [show, setShow] = useState(false);
   const [wallet, setWallet] = useState(false);
 
-
   const connectWallet = () => {
     console.log("Wallet Connected");
     setShow(true);
@@ -24,9 +23,9 @@ function CollapsibleExample() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <Nav.Link href="#features" style={{fontSize:"12px"}}>Features</Nav.Link>
+              <Nav.Link href="#pricing" style={{fontSize:"12px"}}>Pricing</Nav.Link>
+              <NavDropdown title="Dropdown" style={{fontSize:"12px"}} id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -42,13 +41,12 @@ function CollapsibleExample() {
             </Nav>
             <Nav>
               <Button variant="light" onClick={() => connectWallet()}>
-                {wallet? '0x123456abc123':'Connect Wallet'}
+                {wallet ? "0x123456abc123" : "Connect Wallet"}
               </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       <SuccessPopup show={show} setShow={setShow} />
     </>
   );

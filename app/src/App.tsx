@@ -22,7 +22,7 @@ function App() {
             Not So Great UX Staking Dapp
           </h1>
         </Container>
-        <PolicyModal setShow={setShow} show={show} content={policy}/>
+        <PolicyModal title={'Privacy Policy'}setShow={setShow} show={show} content={policy}/>
         <CardsGroup />
       </div>
     </>

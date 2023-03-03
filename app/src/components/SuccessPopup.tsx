@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
-import Button from 'react-bootstrap/Button';
-
 
 export interface popupProps {
     show: boolean;
@@ -10,7 +7,6 @@ export interface popupProps {
 function SuccessPopup(props:popupProps) {
 
   const handleClose = () => props.setShow(false);
-  const handleShow = () => props.setShow(true);
 
   if (props.show) {
     return (

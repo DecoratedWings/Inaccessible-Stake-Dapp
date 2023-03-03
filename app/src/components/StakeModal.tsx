@@ -8,7 +8,7 @@ export interface policyModal {
     content:string;
     title:string;
 }
-function PolicyModal(props:policyModal) {
+function StakeModal(props:policyModal) {
 
   const handleClose = () => props.setShow(false);
   const handleShow = () => props.setShow(true);
@@ -24,9 +24,8 @@ function PolicyModal(props:policyModal) {
         </Modal.Header>
         <Modal.Body className="bg-dark text-white">{props.content}</Modal.Body>
         <Modal.Footer className="bg-dark text-white">
-            {/* tabIndex -1 was added here to demo bad ux, don't do this!! */}
-          <Button variant="primary" onClick={handleClose} tabIndex={-1} >
-            Accept and Continue
+          <Button variant="primary" onClick={handleClose}  >
+            Close
           </Button>
         </Modal.Footer>
       </Modal>
@@ -34,4 +33,4 @@ function PolicyModal(props:policyModal) {
   );
 }
 
-export default PolicyModal;
+export default StakeModal;
