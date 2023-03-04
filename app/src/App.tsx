@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import PhishingBanner from "./components/PhishingBanner";
@@ -8,9 +8,20 @@ import Container from "react-bootstrap/esm/Container";
 import policy from './components/FakePolicy';
 import Button from "react-bootstrap/esm/Button";
 import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa';
+import axios from 'axios'
 
 function App() {
   const [show, setShow] = useState(true);
+
+  // const fetchWalletConnection = async ()=>{
+  //   const results = await axios.get('/.netlify/functions/walletBackend');
+  //   console.log(results.data);
+  // }
+
+  // useEffect(()=>{
+  //   fetchWalletConnection();
+  // },[]);
+
 
   return (
     <>

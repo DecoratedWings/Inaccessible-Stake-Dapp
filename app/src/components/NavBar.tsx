@@ -47,7 +47,7 @@ function CollapsibleExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <SuccessPopup show={show} setShow={setShow} />
+      <SuccessPopup show={show} setShow={setShow} msg={"Success! Your Wallet is connected!"}/>
     </>
   );
 }

@@ -10,7 +10,7 @@ function PhishingBanner() {
         <Alert variant="danger" onClose={() => setShow(false)} dismissible>
           <Alert.Heading>Bewared of Phishing Scams!</Alert.Heading>
           <p className="mb-0">
-            Make sure you are connected to https://notsogreatux.com
+            Make sure you are connected to https://notsogreatux.netlify.app/
           </p>
         </Alert>
       ) : (

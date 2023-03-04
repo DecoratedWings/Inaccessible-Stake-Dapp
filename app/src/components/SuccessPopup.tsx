@@ -3,6 +3,7 @@ import Alert from 'react-bootstrap/Alert';
 export interface popupProps {
     show: boolean;
     setShow: any;
+    msg:string;
 }
 function SuccessPopup(props:popupProps) {
 
@@ -11,7 +12,7 @@ function SuccessPopup(props:popupProps) {
   if (props.show) {
     return (
       <Alert variant="success" onClose={() => handleClose()} dismissible>
-        <Alert.Heading>Success! You Wallet is connected!</Alert.Heading>
+        <Alert.Heading>{props.msg}</Alert.Heading>
       </Alert>
     );
   }else return (<></>);
