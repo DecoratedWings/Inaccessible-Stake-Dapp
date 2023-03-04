@@ -39,6 +39,6 @@ If you have questions or comments about this notice, you may email us at fakeEma
 
 NotSoGreat, INC
 
-`
+`;
 
 export default policy;

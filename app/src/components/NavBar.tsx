@@ -23,9 +23,17 @@ function CollapsibleExample() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features" style={{fontSize:"12px"}}>Features</Nav.Link>
-              <Nav.Link href="#pricing" style={{fontSize:"12px"}}>Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" style={{fontSize:"12px"}} id="collasible-nav-dropdown">
+              <Nav.Link href="#features" style={{ fontSize: "12px" }}>
+                Features
+              </Nav.Link>
+              <Nav.Link href="#pricing" style={{ fontSize: "12px" }}>
+                Pricing
+              </Nav.Link>
+              <NavDropdown
+                title="Dropdown"
+                style={{ fontSize: "12px" }}
+                id="collasible-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -47,7 +55,11 @@ function CollapsibleExample() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <SuccessPopup show={show} setShow={setShow} msg={"Success! Your Wallet is connected!"}/>
+      <SuccessPopup
+        show={show}
+        setShow={setShow}
+        msg={"Success! Your Wallet is connected!"}
+      />
     </>
   );
 }
