@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -11,7 +10,6 @@ export interface policyModal {
 function PolicyModal(props:policyModal) {
 
   const handleClose = () => props.setShow(false);
-  const handleShow = () => props.setShow(true);
 
   return (
     <>
